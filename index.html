@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form input types and attributes</title>
+</head>
+<body>
+    <form action="#">
+        <h1>FORM</h1>
+
+        <!-- Text input -->
+        <fieldset>
+            <legend>Text input</legend>
+            <label for="name">Name:</label>
+            <input type="text" id="name" placeholder="Enter your name" pattern="[a-z]" required>
+        </fieldset>
+
+        <!-- Email input -->
+        <fieldset>
+            <legend>Email input</legend>
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" placeholder="Enter your email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
+        </fieldset>
+            
+        <!-- Password input -->
+        <fieldset>
+            <legend>Password input</legend>
+            <label for="password">Password:</label>
+            <input type="password" name="password" id="password" placeholder="Enter Password" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" minlength="8" required>
+        </fieldset>
+
+        <!-- Number input -->
+        <fieldset>
+            <legend>Number input</legend>
+            <label for="age">Age:</label>
+            <input type="number" name="age" id="age" min="18" max="100" required>
+        </fieldset>
+
+        <!-- Date input -->
+        <fieldset>
+            <legend>Date input</legend>
+            <label for="birthdate">Birthdate:</label>
+            <input type="date" id="birthdate" name="birthdate" required>
+        </fieldset>
+
+        <!-- Checkbox input -->
+        <fieldset>
+            <legend>Checkbox input</legend>
+            <label for="hobbies">Hobbies:</label><br>
+            <input type="checkbox" id="hobby1" name="hobbies" value="Reading">
+            <label for="hobby1">Reading</label><br>
+            <input type="checkbox" id="hobby2" name="hobbies" value="Music">
+            <label for="hobby2">Music</label><br>
+            <input type="checkbox" id="hobby3" name="hobbies" value="Sports">
+            <label for="hobby3">Sports</label><br>
+        </fieldset>
+
+        <!-- Radio input -->
+        <fieldset>
+            <legend>Radio input</legend>
+            <label for="gender">Gender:</label><br>
+            <input type="radio" id="male" name="gender" value="Male" required>
+            <label for="male">Male</label><br>
+            <input type="radio" id="female" name="gender" value="Female">
+            <label for="female">Female</label><br>
+            <input type="radio" id="other" name="gender" value="Other">
+            <label for="non-binary">Non-binary</label><br>
+        </fieldset>
+
+        <!-- Select input -->
+        <fieldset>
+            <legend>Select input</legend>
+            <label for="country">Country:</label>
+            <select id="country" name="country">
+                <option value="Kenya">USA</option>
+                <option value="USA">USA</option>
+                <option value="Canada">Canada</option>
+                <option value="Mexico">Mexico</option>
+                <option value="Brazil">Brazil</option>
+                <option value="Argentina">Argentina</option>
+            </select>
+        </fieldset>
+
+        <!-- Textarea input -->
+        <fieldset>
+            <legend>Textarea input</legend>
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="4" cols="50" placeholder="Enter your message"></textarea><br>
+        </fieldset>
+
+        <!-- File input -->
+        <fieldset>
+            <legend>File input</legend>
+            <label for="avatar">Select a profile picture:</label><br>
+            <input type="file" id="avatar" name="avatar" accept="image/png, image/jpeg" required><br>
+        </fieldset>
+
+        <!-- Color input -->
+        <fieldset>
+            <legend>Color input</legend>
+            <label for="color">Select your favorite color:</label>
+            <input type="color" name="color" id="color">
+        </fieldset>
+        
+        <!-- Submit Button -->
+        <input type="submit" value="Submit">
+
+    </form>
+</body>
+</html>
